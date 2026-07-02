@@ -1,0 +1,214 @@
+/* body{
+    background-color: rgb(255, 0, 0);
+    
+} */
+
+body{
+    background-image: url(background.jpg);
+
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size:cover;
+    background-attachment: fixed;
+    min-height: 100vh;
+    margin: 0;
+
+}
+.pic-img{
+    width: 200px;
+    height:200px;
+
+    border-radius: 50%;
+}
+.font{
+    color: aliceblue;
+}
+.head{
+    color: rgb(249, 255, 253);
+}
+.navbar a {
+    color: rgb(12, 132, 237);
+    text-decoration: none;
+    font-size:18px;
+    font-weight: bold;
+    display: inline-block;
+    margin: 0 15px;
+    transition: transform 0.2s color 0.3s ease;
+}
+a:hover{
+    color: hsl(249, 17%, 69%);
+    transform: scale(1.15);
+    /* text-shadow: 0 0 10px #38bdf8 , 0 0 20px #0070f3; */
+    text-shadow: 0 0 8px red , 0 0 10px blue;
+}
+
+.skils {
+    color: rgb(123, 140, 140);
+    font-size: 15px;
+    font-style: oblique;
+    text-decoration: none;
+}
+.pfp-img{
+    width: 200px;
+    height:200px;
+    border-radius: 50%;
+}
+.intro {
+    color: rgb(206, 175, 175);
+    font-size: 25px;
+}
+
+.contact-container {
+    max-width: 450px;
+    margin: 50px auto;
+    padding: 30px;
+    background:transparent;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgb(234, 234, 224);
+    border-radius: 15px;
+    box-shadow: 0 8px 32px 0 rgba(0,0,0,0.37);
+    text-align: center;
+    font-family: 'segoe UI', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color:#ffffff;
+}
+
+
+.contact-container h2{
+    margin-bottom: 25px;
+    font-size: 28px;
+    letter-spacing: 1px;
+}
+
+.form-group{
+    margin-bottom: 20px;
+    text-align: left;
+}
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 14px;
+    color: #cbd5e1;
+}
+
+/* Style inputs and textarea */
+.form-group input,
+.form-group textarea{
+    width:100%;
+    padding:12px;
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 8px;
+    color: #fff;
+    font-size: 15px;
+    box-sizing: border-box; /* Prevents inputs from breaking container edges */
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+/* Highlight inputs when clicked */
+.form-group input:focus, 
+.form-group textarea:focus {
+    border-color: #38bdf8; /* Sleek light blue border */
+    background: rgba(255, 255, 255, 0.15);
+}
+
+/* Disable ugly diagonal resizing on textarea */
+.form-group textarea {
+    resize: vertical;
+}
+
+
+/* Align buttons nicely */
+.button-group {
+    display: flex;
+    gap: 15px;
+    margin-top: 25px;
+}
+
+
+.btn {
+    flex: 1;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.1s ease;
+}
+
+.btn-send {
+    background: #0b99db; /* Blue button */
+    color: rgb(223, 216, 216);
+}
+
+.btn-send:hover {
+    background: #1c07d878;
+}
+
+
+
+.btn-reset {
+    background: rgb(15, 69, 156);
+    color: rgb(232, 229, 229);
+}
+.btn-reset:hover{
+    background: #892200b1;
+}
+
+.btn:active {
+    transform: scale(0.98);
+}
+
+
+/* * GitHub Link Styling */ 
+.github-link {
+    display: inline-block;
+    margin-top: 20px;
+    color: #1f9ad3;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.github-link:hover {
+    color: #ccdfe7;
+    text-decoration: underline;
+}
+
+
+.paragraph{
+    color: #ccdfe7;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    margin: 10px;
+    padding: auto;
+
+
+}
+
+
+
+
+/* Navbar ke links ka normal style */
+.navbar a {
+    color: #0070f3;          /* Default blue color */
+    text-decoration: none;   /* Underline hatane ke liye */
+    margin: 0 15px;          /* Links ke beech mein space */
+    font-weight: bold;
+    font-size: 18px;
+    transition: all 0.3s ease;
+    border-bottom: 2px solid transparent; /* Pehle se invisible line rakhein */
+    padding-bottom: 5px;
+}
+
+/* Hover karne par color change hoga */
+.navbar a:hover {
+    color: #38bdf8;
+}
+
+/* 🔥 Jo page OPEN hoga (Active Link), wo white dikhega aur glowing line aayegi */
+.navbar a.active {
+    color: #ffffff !important;         /* Highlighted color */
+    border-bottom: 2px solid #38bdf8; /* Niche ek active cyan line */
+    text-shadow: 0 0 10px #38bdf8;    /* Glowing text effect */
+}
